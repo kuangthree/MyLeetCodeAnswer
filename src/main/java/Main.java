@@ -1,11 +1,10 @@
-import solutions.BulbSwitcher1;
-import solutions.BulbSwitcher2;
-
+import solutions.DailyTemperatures;
 public class Main {
     public static void main(String[] args){
-        BulbSwitcher2 bulbSwitcher2 = new BulbSwitcher2();
-        int a = bulbSwitcher2.flipLights(4,100);
-        System.out.println(a);
+        int[] a = new DailyTemperatures().solve(new int[]{73,74,75,71,69,72,76,73});
+        for(int k:a){
+            System.out.print(k+", ");
+        }
     }
 
 }
